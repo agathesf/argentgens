@@ -11,3 +11,16 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  cursor: none;
+      margin: 0;
+}

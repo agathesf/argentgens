@@ -20,10 +20,14 @@
 	<div class="menu">
 
 		<div class="dropdown">
+			
+		</div>
+
+		<div class="dropdown">
 			<li class="dropbtn">équipe<div class="swiper-button-next"></div></li>
 			<div class="dropdown-content">
-				<span style="margin-bottom: 10px"><strong>Colloque sous la direction de :</strong></span>
-				<span><button class="modal-link" id="wrapper">Patrice Baubeau</button></span>
+				<span><strong>Colloque sous la direction de :</strong></span>
+				<span class="modal-link" id="wrapper">Patrice Baubeau</span>
 				<span>Martial Poirson</span>
 				<span>Yann Toma</span>
 
@@ -33,6 +37,7 @@
 		<div class="dropdown">
 			<li class="dropbtn"><a href="index.html" class="timeline-link">programme</a><div class="swiper-button-next"></div></li>
 		</div>
+
 		<div class="dropdown">
 			<li class="dropbtn">intervenants<div class="swiper-button-next"></div></li>
 			<div class="dropdown-content dropdown-content-intervenant" style="font-size: 12px !important; line-height: 17px !important;">
@@ -62,6 +67,7 @@
 				<span>Slaven Waelti</span>
 			</div>
 		</div>
+		
 		<div class="dropdown">
 			<li class="dropbtn">partenaires<div class="swiper-button-next"></div></li>
 			<div class="dropdown-content">
@@ -80,7 +86,9 @@
 </div>
 
 <div class="logo-wrapper">
-	<img src="images/ps.png" alt="sorbonne" id="sorbonne">
-	<img src="images/p8.png" alt="p8">
-	<img src="images/upn.png" alt="nanterre">
+
+	<%= image_tag "ps.png", alt: "test", id: "sorbonne" %>
+	<%= image_tag "p8.png", alt: "test", id: "p8" %>
+	<%= image_tag "upn.png", alt: "test", id: "nanterre" %>
+
 </div>

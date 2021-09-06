@@ -1,4 +1,3 @@
-
 .container {
   display: flex;
   justify-content: center;
@@ -71,7 +70,7 @@
 .menu .dropdown li {
   padding: 10px 0;
   list-style: none;
-  font-size: 14px;
+  font-size: 12px;
   position: relative;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -168,19 +167,106 @@
   pointer-events: none;
 }
 
-
-
-.menu .swiper-button-next {
-    right: 3%;
-    // background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'red'%2F%3E%3C%2Fsvg%3E);
+.back {
+  position: absolute;
+  top: 18px;
+    z-index: 1;
+    left: 25%;
+    color: red;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
-.menu .swiper-button-next {
-    background-size: 18px 14px;
-    top: 15%;
-    width: 14px;
-    height: 19px;
-    margin-top: 0px;
-    z-index: 2;
-    transition: 0.2s;
+.back:hover > p::before {
+  content: '\002190';
+  margin-right: 10px;
+  display: inline;
 }
+
+.next {
+  position: absolute;
+  top: 18px;
+    z-index: 1;
+    right: 32%;
+    color: red;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.next:hover > p::after {
+  content: '\002192';
+  margin-left: 10px;
+  display: inline;
+}
+
+///////////////////////////////
+
+.modal-link{
+  padding : 0;
+  border : none;
+  border-radius : 0px;
+  background: none;
+  /*color:#eee;*/
+}
+
+#wrapper {
+  color: red;
+  padding : 0;
+  border : none;
+  border-radius : 0px;
+  background: none;
+  font-weight: lighter;
+  font-family: 'Open Sans';
+}
+
+#close {
+  color: red;
+  padding : 0;
+  border : none;
+  border-radius : 0px;
+  background: none;
+  font-weight: lighter;
+  font-family: 'Open Sans';
+}
+
+#wrapper:hover::after {
+    content: '\002192';
+  margin-left: 10px;
+  display: inline;
+}
+
+.modal{
+  box-shadow: 0px 5px 45px 5px rgba(0, 0, 0, 0.05);
+  background: whitesmoke;
+  height: 100vh;
+  width: 400px;
+}
+
+.display{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 320px;
+  z-index: 9;
+  animation: slide-in 0.3s;
+}
+
+@keyframes slide-in {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 320px;
+  }
+}
+
+.hide{
+  display: none;
+}
+
+.modal-content {
+  padding: 30px;
+}
+
