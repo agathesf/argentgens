@@ -41,33 +41,12 @@
 		<div class="dropdown">
 			<li class="dropbtn">intervenants<div class="swiper-button-next"></div></li>
 			<div class="dropdown-content dropdown-content-intervenant" style="font-size: 12px !important; line-height: 17px !important;">
-				<span>Christine Baron &#183; </span>
-				<span>Guillaume Cot &#183; </span>
-				<span>Beatrice Schuchardt &#183; </span>
-				<span>Romain Jobez &#183; </span>
-				<span>Isabelle Barbéris &#183; </span>
-				<span>Marion Laval-Jeantet &#183; </span>
-				<span>Isabelle de Maison Rouge &#183; </span>
-				<span>Agnieszka Komorowska &#183; </span>
-				<span>Emmanuel Bouju &#183; </span>
-				<span>Marius Warholm Haugen &#183; </span>
-				<span>Marie-Laure Massei-Chamayou &#183; </span>
-				<span>Christophe Rioux &#183; </span>
-				<span>Ludovic Desmedt &#183; </span>
-				<span>Jacinto Lageira &#183; </span>
-				<span>Sophie Cras &#183; </span>
-				<span>Christophe Domino &#183; </span>
-				<span>Res Ingold &#183; </span>
-				<span>Stephen Wright &#183; </span>
-				<span>Éric Méchoulan &#183; </span>
-				<span>Alexandre Péraud &#183; </span>
-				<span>Christophe Reffait &#183; </span>
-				<span>Annika Nickenig &#183; </span>
-				<span>Élise Sultan-Villet &#183; </span>
-				<span>Slaven Waelti</span>
+				<% @intervenants.each do |intervenant| %>
+					<span> <%= intervenant.name %></span>
+				<% end %>
 			</div>
 		</div>
-		
+
 		<div class="dropdown">
 			<li class="dropbtn">partenaires<div class="swiper-button-next"></div></li>
 			<div class="dropdown-content">
