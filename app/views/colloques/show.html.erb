@@ -1,1 +1,7 @@
-HELOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+<div class="d-flex justify-content-end">
+	<p><%=  @colloque.title %></p>
+	<%= link_to "Retour", root_path %>
+	<% if @colloque.id < 11 %>
+		<%= link_to "Suivant :", colloque_path(@colloque.id+1) %>
+	<% end %>
+</div>
