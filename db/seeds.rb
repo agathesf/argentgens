@@ -40,10 +40,35 @@ Intervenant.create(name: "Patrice Baubeau", university: "Université Paris 10")
 puts 'Done !'
 
 puts 'Creating chapters...'
-Chapter.create(title: "L'économie dans l'art : introduction inaugurale", date: "11/05/21")
-Chapter.create(title: "Écritures de l'argent", date: "12/05/21", presidence: "Christine Baron")
-Chapter.create(title: "Figurations, motifs, tropes économiques", date: "13/05/21", presidence: "Sophie Cras")
-Chapter.create(title: "Postures et impostures artistiques", date: "14/05/21", presidence: "Yann Toma")
-Chapter.create(title: "Dimensions sensorielles des objets monétaires : une exploration à partir du faux", date: "15/05/21", presidence: "Éric Méchoulan")
-Chapter.create(title: "Rhétorique des économistes", date: "15/05/21", presidence: "Éric Méchoulan")
+chapter1 = Chapter.create(title: "L'économie dans l'art : introduction inaugurale", date: "11/05/21")
+chapter2 = Chapter.create(title: "Écritures de l'argent", date: "12/05/21", presidence: "Christine Baron")
+chapter3 = Chapter.create(title: "Figurations, motifs, tropes économiques", date: "13/05/21", presidence: "Sophie Cras")
+chapter4 = Chapter.create(title: "Postures et impostures artistiques", date: "14/05/21", presidence: "Yann Toma")
+chapter5 = Chapter.create(title: "Dimensions sensorielles des objets monétaires : une exploration à partir du faux", date: "15/05/21", presidence: "Éric Méchoulan")
+chapter6 = Chapter.create(title: "Rhétorique des économistes", date: "15/05/21", presidence: "Éric Méchoulan")
+puts 'Done !'
+
+puts 'Creating colloques...'
+# Chapter1
+Colloque.create(title: "Introduction inaugurale", hour: "15:00", chapter: chapter1)
+Colloque.create(title: "Flux monétaires à l'état gazeux", hour: "16:00", chapter: chapter1)
+
+# Chapter2
+Colloque.create(title: "Commerces du théâtre, théâtralisations de l’argent", hour: "9:30", chapter: chapter2)
+Colloque.create(title: "Désorientations", hour: "11:30", chapter: chapter2)
+
+# Chapter3
+Colloque.create(title: "Pour une poétique de l’insolvabilité", hour: "13:30", chapter: chapter3)
+Colloque.create(title: "Pertes, profits, circulations", hour: "15:00", chapter: chapter3)
+
+# Chapter4
+Colloque.create(title: "Stock Exchange", hour: "9:30", chapter: chapter4)
+Colloque.create(title: "Entreprises critiques", hour: "11:00", chapter: chapter4)
+
+# Chapter5
+Colloque.create(title: "Fausse monnaie et vérité artistique", hour: "14:00", chapter: chapter5)
+
+# Chapter1
+Colloque.create(title: "Styles et fictions des économistes", hour: "15:00", chapter: chapter6)
+Colloque.create(title: "Imaginaires économiques", hour: "17:30", chapter: chapter6)
 puts 'Done !'

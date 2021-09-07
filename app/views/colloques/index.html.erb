@@ -1,0 +1,26 @@
+<section class="timeline">
+  <ul>
+    <li>
+      <div>
+        <time>11/05/21 · 15/05/21</time> 
+        <p>Colloque en visioconférence</p>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        </p>
+      </div>
+    </li>
+
+    <% @chapters.each do |chapter| %>
+    	<li>
+    	  <div>
+    	    <time><%= chapter.date %></time> 
+    	    <span> <%= chapter.title %> </span>
+            <% chapter.colloques.each do |colloque| %>
+                <%= link_to colloque_path(colloque) do %>
+                    <p> <%= colloque.title %> </p>
+                <% end %>
+            <% end %>
+    	  </div>
+    	</li>
+    <% end %>
+  </ul>
+</section>

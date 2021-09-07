@@ -5,7 +5,9 @@ class IntervenantsController < ApplicationController
 	end
 
 	def show
+		@colloques = Colloque.all
 		@chapters = Chapter.all
+		
 		@intervenants = Intervenant.all
 		@intervenant = Intervenant.find(params[:id])
 	end

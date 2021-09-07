@@ -39,9 +39,12 @@
 			<div class="dropdown">
 				<li class="dropbtn">programme<div class="swiper-button-next"></div></li>
 				<div class="dropdown-content dropdown-content-intervenant" style="line-height: 17px !important;">
-					<% @chapters.each do |chapter| %>
-						<%= link_to chapter_path(chapter) do %>
-							<span> <%= chapter.title %> </span>
+					<% @chapters.each do |chapter|%>
+						<strong> <%= chapter.title %> </strong>
+						<% chapter.colloques.each do |colloque| %>
+							<%= link_to colloque_path(colloque) do %>
+								<span> <%= colloque.title %> </span>
+							<% end %>
 						<% end %>
 					<% end %>
 				</div>
