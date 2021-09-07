@@ -5,6 +5,8 @@ class ChaptersController < ApplicationController
 	end
 
 	def show
+		@chapters = Chapter.all
+		@intervenants = Intervenant.all
 	end
 
 	private

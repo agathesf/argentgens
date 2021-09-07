@@ -1,3 +1,13 @@
+/* Add an active class to the active dropdown button */
+.active {
+  color: red;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-content {
+  display: none;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -7,14 +17,11 @@
 }
 
 .logo-container {
-  position: absolute;
-  z-index: 1000;
-  left: 30px;
-  top: 30px;
+  margin: 30px;
 }
 
 .logo {
-  width: 270px;
+  width: 100%;
 }
 
 .second-title {
@@ -27,27 +34,27 @@
 }
 
 .logo-wrapper {
-  position: absolute;
-  left: 5.3%;
-  bottom: 20px;
-  z-index: 10000;
   display: grid;
+  margin-bottom: 30px;
 }
 
 .logo-wrapper img {
-  max-height: 35px;
+  max-height: 40px;
   padding : 5px;
   margin: 0 auto;
 }
 
 .logo-wrapper #sorbonne {
-  max-height: 50px;
+  max-height: 65px;
 }
 
-.menu-container {
+.sidebar {
+  display: grid;
+    grid-template-rows: 1fr 2.5fr 1fr;
   position: absolute;
   font-weight: lighter;
-  width: 330px;
+  max-width: 330px;
+  width: 33vw;
   height: 100vh;
   top: 0;
   left: 0;
@@ -57,13 +64,21 @@
   transition: box-shadow 5s ease-in-out;
 }
 
-.menu-container:hover {
+.sidebar:hover {
   box-shadow: 0px 5px 245px 5px rgba(0, 0, 0, 0.2);
 }
 
+.menu-container {
+
+  margin: 30px 30px 0px;
+}
+
+.menu-container:hover {
+}
+
 .menu {
-  transform: translate(0, -50%);
-  margin: 51vh 30px;
+  // transform: translate(0, -30%);
+  // margin: 30px 30px;
 }
 
 
@@ -77,9 +92,9 @@
   font-weight: 400;
 }
 
-.menu .dropdown:hover li {
-  color: red;
-}
+// .menu .dropdown:hover li {
+//   color: red;
+// }
 
 .menu .swiper-button-next {
   background-size: 18px 14px;
@@ -100,23 +115,33 @@
   transform: rotate(90deg);
 }
 
+.menu .dropdown.active .swiper-button-next {
+  transform: rotate(90deg);
+}
+
 .dropdown-content {
   display: none;
-  position: relative;
-  margin: 30px 0px;
-  min-width: 160px;
-  z-index: 1;
+  margin: 20px 0px;
   color: red;
 }
 
-.dropdown:hover .dropdown-content {
-  display: grid !important;
-  color: red;
+// .dropdown:hover .dropdown-content {
+//   display: grid !important;
+//   color: red;
+// }
+
+.dropdown-content-intervenant {
+      max-height: 12vh;
+    overflow: scroll;
+    margin: 0px 0px 30px;
 }
 
-.dropdown:hover .dropdown-content-intervenant {
-  display: inherit !important;
-  color: red;
+.dropdown-content-intervenant::after {
+  content: 'scroll';
+      position: absolute;
+      font-style: italic;
+      font-size: 10px;
+    bottom: -20px;
 }
 
 .language {
