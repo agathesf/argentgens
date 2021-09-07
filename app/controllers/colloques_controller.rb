@@ -9,6 +9,7 @@ class ColloquesController < ApplicationController
 
 	def show
 		@colloque = Colloque.find(params[:id])
+		
 		@chapters = Chapter.all
 		@intervenants = Intervenant.all
 	end
