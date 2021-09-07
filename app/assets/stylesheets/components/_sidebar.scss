@@ -51,7 +51,7 @@
 .sidebar {
   display: grid;
     grid-template-rows: 1fr 2.5fr 1fr;
-  position: absolute;
+  position: fixed;
   font-weight: lighter;
   max-width: 330px;
   width: 33vw;
