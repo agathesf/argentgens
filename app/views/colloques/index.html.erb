@@ -1,25 +1,38 @@
 <section class="timeline">
   <ul>
     <li>
-      <div>
+      <div class="content">
         <time>11/05/21 · 15/05/21</time> 
-        <p>Colloque en visioconférence</p>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        <h2>Colloque en visioconférence</h2>
+        <p class="colloque-link" style="font-size: 11px; text-align: justify; line-height: 18px;">
+            Ce colloque interdisciplinaire porte sur les relations entre <strong>les arts et l’économie</strong> d’hier à aujourd’hui. En effet, les formes de production, de représentation et de réception de l’art à travers les âges sont indissociables du système économique de leur temps, sans en être pour autant une simple transposition tandis que la mise en fiction de l’économie, sa réalité parfois portée à la critique, sublimée ou transformée par l’art, autorisent de subtiles stratégies d’infiltration, de détournement, de subversion de l’attribution de la valeur. D’où l’existence d’un rapport de fascination et de répulsion mutuelle entre art et argent. Ce dialogue complexe s’éclaire en interrogeant la position des œuvres, des artistes et des publics, mais aussi, de façon symétrique, les modalités de captation des gestes artistiques au sein de l’activité économique proprement dite. Le travail créateur s’insère ainsi dans la production de valeur marchande comme dans ses processus de créance, tout en interrogeant ses modalités d’évaluation, de distribution ou d’appropriation, sous leurs formes économiques, sociales, politiques, culturelles et symboliques. Le colloque accordera une large place à la recherche-création et à l’expérimentation artistiques des objets et mécanismes économiques (monnaie, actions). Il articulera relecture de textes canoniques, paroles de penseurs de différentes disciplines, expérimentations d’artistes et rencontres avec des acteurs de l’économie. 
+            <span style="color: red; margin-top: 10px; display: block;"><strong>MOTS CLÉS :</strong> ÉCONOMIE ·  LITTÉRATURE ·  ART · FICTION · ARGENT · MONNAIE · CRISE · CRÉANCE</span>
         </p>
       </div>
     </li>
 
     <% @chapters.each do |chapter| %>
     	<li>
-    	  <div>
+    	  <div class="content">
+
     	    <time><%= chapter.date %></time> 
-    	    <span> <%= chapter.title %> </span>
-            <% chapter.colloques.each do |colloque| %>
-                <%= link_to colloque_path(colloque) do %>
-                    <p> <%= colloque.title %> </p>
-                <% end %>
+
+    	    <h2> <%= chapter.title %> </h2>
+
+            <% if chapter.presidence != nil %>
+            <p class="presidence">Présidence de la journée : <%= chapter.presidence %> </p>
             <% end %>
+
+            <div class="colloque-link">
+                <% chapter.colloques.each do |colloque| %>
+                    <%= link_to colloque_path(colloque) do %>
+                        <p class="title"> <%= colloque.hour %> · <span> <%= colloque.title %></span> </p>
+                    <% end %>
+                <% end %>
+            </div>
+
     	  </div>
+
     	</li>
     <% end %>
   </ul>
