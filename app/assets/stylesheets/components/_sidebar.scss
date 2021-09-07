@@ -137,6 +137,11 @@
     margin: 0px 0px 30px;
 }
 
+.dropdown-content-intervenant a:hover .intervenant-link::after {
+  content: "\279C";
+    padding-left: 5px;
+}
+
 .dropdown-content-intervenant::after {
   content: 'scroll';
       position: absolute;

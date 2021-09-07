@@ -1,1 +1,37 @@
-<div class="ml-5 pl-5">VOICI LES VIDEOS OU FIGURE <%= @intervenant.name %></div>
+<div class="back" style="position: fixed; right: 0">
+	<%= link_to "Menu", root_path %>
+</div>
+
+
+<section class="timeline">
+  <ul>
+
+  	<li>
+  		<div class="content">
+  			<time> &nbsp; </time>
+  			<h2 class="pt-2"> <%= @intervenant.name %> </h2>
+  			<p class="title"> <%= @intervenant.university %> </p>
+  		</div>
+  	</li>
+
+    <% @intervenant.interventions.each do |intervention| %>
+
+    	<li style= "<%= "padding-bottom: 250px;" if @intervenant.interventions.length == 1%>" class= "<%= "in-view" if @intervenant.interventions.length == 1%>">
+    	  <div class="content">
+
+    	    <time class="time-show"><%= intervention.colloque.chapter.date %></time> 
+
+    	    <h4> <%= intervention.description %> </h4>
+    	    <p class="title py-3"> <span> <%= intervention.colloque.chapter.title %> </span> · <%= intervention.colloque.category %></p>
+
+    	    <div class="timeline-yt">
+    	    	<iframe width="560" height="315" src="<%= intervention.video_url %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	    </div>
+
+    	  </div>
+
+    	</li>
+    <% end %>
+
+  </ul>
+</section>

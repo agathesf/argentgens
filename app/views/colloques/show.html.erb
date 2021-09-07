@@ -1,7 +1,50 @@
-<div class="d-flex justify-content-end">
-	<p><%=  @colloque.title %></p>
-	<%= link_to "Retour", root_path %>
-	<% if @colloque.id < 11 %>
-		<%= link_to "Suivant :", colloque_path(@colloque.id+1) %>
-	<% end %>
+<div class="back" style="position: fixed; right: 0">
+	<%= link_to "Menu", root_path %>
 </div>
+
+
+<section class="timeline">
+  <ul>
+  		<li>
+  			<div class="content">
+  				<time> &nbsp; </time>
+  				<% if @colloque.id > 1 %>
+  					<p class="title"> <span> <%= link_to "< Retour :", colloque_path(@colloque.id-1) %> </span> <%= @previous.title %></p>
+  				<% end %>
+  				<h2 class="pt-2"> <%= @colloque.title %> </h2>
+  				<p class="title"> <%= @colloque.category %> </p>
+  			</div>
+  		</li>
+
+    <% @colloque.interventions.each do |intervention| %>
+
+    	<li>
+    	  <div class="content">
+
+    	    <time class="time-show"><%= intervention.intervenant.name %></time> 
+
+    	    <h4> <%= intervention.description %> </h4>
+    	    <p class="title py-3"> <span> <%= intervention.intervenant.name %> </span> · <%= intervention.intervenant.university %></p>
+
+    	    <div class="timeline-yt">
+    	    	<iframe width="560" height="315" src="<%= intervention.video_url %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    	    </div>
+
+    	  </div>
+
+    	</li>
+    <% end %>
+
+    <li>
+    	<div class="content">
+    		<time> &nbsp; </time>
+    		<% if @colloque.id < 11 %>
+    			<p class="title"> <span> <%= link_to "> Suivant :", colloque_path(@colloque.id+1) %> </span> <%= @next.title %></p>
+    		<% else %>
+    			<p class="title">Merci !</p>
+    		<% end %>
+    	</div>
+    </li>
+
+  </ul>
+</section>

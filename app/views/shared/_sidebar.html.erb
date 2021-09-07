@@ -55,7 +55,7 @@
 				<div class="dropdown-content dropdown-content-intervenant" style="line-height: 17px !important;">
 					<% @intervenants.each do |intervenant| %>
 						<%= link_to intervenant_path(intervenant) do %>
-							<span> <%= intervenant.name %> </span>
+							<span class="intervenant-link"> <%= intervenant.name %> </span>
 						<% end %>
 					<% end %>
 				</div>

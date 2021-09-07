@@ -28,6 +28,13 @@
                     <%= link_to colloque_path(colloque) do %>
                         <p class="title"> <%= colloque.hour %> · <span> <%= colloque.title %></span> </p>
                     <% end %>
+                    <div class="d-flex">
+                        <% intervenants = [] %>
+                        <% colloque.interventions.each do |intervention| %>
+                            <% intervenants << intervention.intervenant.name %>
+                        <% end %>
+                        <p class="intervenants"> <%= intervenants.join(" · ") %> </p>
+                    </div>
                 <% end %>
             </div>
 

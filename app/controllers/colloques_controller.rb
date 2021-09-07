@@ -9,9 +9,17 @@ class ColloquesController < ApplicationController
 
 	def show
 		@colloque = Colloque.find(params[:id])
-		
+
 		@chapters = Chapter.all
 		@intervenants = Intervenant.all
+
+		if @colloque.id > 1
+			@previous = Colloque.find(params[:id] = @colloque.id-1)
+		end
+
+		if @colloque.id < 11
+			@next = Colloque.find(params[:id] = @colloque.id+1)
+		end 
 	end
 
 	private

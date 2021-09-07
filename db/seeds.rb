@@ -51,27 +51,27 @@ puts 'Done !'
 
 puts 'Creating colloques...'
 # Chapter1
-colloque1 = Colloque.create(title: "Introduction inaugurale", hour: "15:00", chapter: chapter1)
-colloque2 =Colloque.create(title: "Flux monétaires à l'état gazeux", hour: "16:00", chapter: chapter1)
+colloque1 = Colloque.create(title: "Introduction inaugurale", hour: "15:00", chapter: chapter1, category: "introduction")
+colloque2 =Colloque.create(title: "Flux monétaires à l'état gazeux", hour: "16:00", chapter: chapter1, category: "conférence")
 
 # Chapter2
-colloque3 = Colloque.create(title: "Commerces du théâtre, théâtralisations de l’argent", hour: "9:30", chapter: chapter2)
-colloque4 = Colloque.create(title: "Désorientations", hour: "11:30", chapter: chapter2)
+colloque3 = Colloque.create(title: "Commerces du théâtre, théâtralisations de l’argent", hour: "9:30", chapter: chapter2, category: "table ronde")
+colloque4 = Colloque.create(title: "Désorientations", hour: "11:30", chapter: chapter2, category: "table ronde")
 
 # Chapter3
-colloque5 = Colloque.create(title: "Pour une poétique de l’insolvabilité", hour: "13:30", chapter: chapter3)
-colloque6 = Colloque.create(title: "Pertes, profits, circulations", hour: "15:00", chapter: chapter3)
+colloque5 = Colloque.create(title: "Pour une poétique de l’insolvabilité", hour: "13:30", chapter: chapter3, category: "conférence/performance")
+colloque6 = Colloque.create(title: "Pertes, profits, circulations", hour: "15:00", chapter: chapter3, category: "table ronde")
 
 # Chapter4
-colloque7 = Colloque.create(title: "Stock Exchange", hour: "9:30", chapter: chapter4)
-colloque8 = Colloque.create(title: "Entreprises critiques", hour: "11:00", chapter: chapter4)
+colloque7 = Colloque.create(title: "Stock Exchange", hour: "9:30", chapter: chapter4, category: "table ronde")
+colloque8 = Colloque.create(title: "Entreprises critiques", hour: "11:00", chapter: chapter4, category: "table ronde")
 
 # Chapter5
-colloque9 = Colloque.create(title: "Fausse monnaie et vérité artistique", hour: "14:00", chapter: chapter5)
+colloque9 = Colloque.create(title: "Fausse monnaie et vérité artistique", hour: "14:00", chapter: chapter5, category: "conférence")
 
 # Chapter1
-colloque10 = Colloque.create(title: "Styles et fictions des économistes", hour: "15:00", chapter: chapter6)
-colloque11 = Colloque.create(title: "Imaginaires économiques", hour: "17:30", chapter: chapter6)
+colloque10 = Colloque.create(title: "Styles et fictions des économistes", hour: "15:00", chapter: chapter6, category: "table ronde")
+colloque11 = Colloque.create(title: "Imaginaires économiques", hour: "17:30", chapter: chapter6, category: "table ronde")
 puts 'Done !'
 
 puts 'Creating interventions...'
@@ -80,15 +80,14 @@ puts 'Creating interventions...'
 Intervention.create(
 	description: "Introduction générale", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque1
-)
+	colloque: colloque1,
+	intervenant: eh)
 
 Intervention.create(
 	description: "Mot d'accueil de Edith Heurgon", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
 	colloque: colloque1,
-	intervenant: eh
-)
+	intervenant: eh)
 
 Intervention.create(
 	description: "Introduction", 
@@ -286,8 +285,6 @@ Intervention.create(
 	colloque: colloque11,
 	intervenant: sw
 )
-
-
 puts 'Done !'
 
 
