@@ -258,18 +258,27 @@
   border : none;
   border-radius : 0px;
   background: none;
-  font-weight: lighter;
-  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: none;
+}
+
+.modal-text {
+  border-top: 1px solid lightgray;
 }
 
 #wrapper:hover::after {
-    content: '\002192';
+  content: "\279C";
   margin-left: 10px;
   display: inline;
 }
 
 .modal{
-  box-shadow: 0px 5px 45px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 5px 45px 5px rgba(0, 0, 0, 0.15);
   background: whitesmoke;
   height: 100vh;
   width: 400px;
@@ -277,7 +286,7 @@
 
 .display{
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 320px;
   z-index: 9;
@@ -298,6 +307,9 @@
 }
 
 .modal-content {
+      background-color: transparent;
+    border: 0px solid rgba(0, 0, 0, 0.2);
   padding: 30px;
+    height: 100vh;
 }
 
