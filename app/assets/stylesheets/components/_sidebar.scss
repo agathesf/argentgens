@@ -147,7 +147,11 @@
       position: absolute;
       font-style: italic;
       font-size: 10px;
-    bottom: -20px;
+    bottom: -20px;   
+}
+
+.dropdown-content-intervenant::-webkit-scrollbar {
+  display: none;
 }
 
 .language {
@@ -242,7 +246,7 @@
   /*color:#eee;*/
 }
 
-#wrapper {
+#modalPB-btn {
   color: red;
   padding : 0;
   border : none;
@@ -267,11 +271,16 @@
   cursor: none;
 }
 
-.modal-text {
-  border-top: 1px solid lightgray;
+.scroll::-webkit-scrollbar {
+  display: none;
 }
 
-#wrapper:hover::after {
+.modal-text {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+#modalPB-btn:hover::after {
   content: "\279C";
   margin-left: 10px;
   display: inline;
@@ -311,5 +320,6 @@
     border: 0px solid rgba(0, 0, 0, 0.2);
   padding: 30px;
     height: 100vh;
+    justify-content: end;
 }
 

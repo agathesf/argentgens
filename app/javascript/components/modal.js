@@ -1,6 +1,6 @@
 const modalOpen = () => {
-var modal = document.getElementById('wrapper-p');
-var buttonModal = document.getElementById('wrapper');
+var modal = document.getElementById('modalPB');
+var buttonModal = document.getElementById('modalPB-btn');
 var cross = document.getElementById('close');
 
 console.log('hello');
