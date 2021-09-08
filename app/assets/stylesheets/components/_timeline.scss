@@ -130,7 +130,7 @@ a {
   color: red;
 }
 
-a:hover{
+a:hover {
   color: red;
   text-decoration: none;
 }
@@ -142,6 +142,22 @@ a:hover .title::after {
 
 .colloque-link {
   margin-top: 10px;
+}
+
+.programme-int {
+  display: flex;
+}
+
+.programme-more {
+  display: none;
+}
+
+a:hover div.programme-int {
+  display: none;
+}
+
+a:hover div.programme-more {
+  display: block;
 }
 
 .presidence {

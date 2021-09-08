@@ -12,7 +12,7 @@ Intervenant.destroy_all
 Chapter.destroy_all
 
 puts 'Creating intervenants...'
-eh = Intervenant.create(name: "Edith Heurgon")
+eh = Intervenant.create(name: "Edith Heurgon", university: "Présidente du colloque de Cerisy")
 cb = Intervenant.create(name: "Christine Baron", university: "Université de Poitiers")
 gc = Intervenant.create(name: "Guillaume Cot", university: "Université Paris" )
 bs = Intervenant.create(name: "Beatrice Schuchardt", university: "Université de Münster")
@@ -53,7 +53,7 @@ puts 'Done !'
 
 puts 'Creating colloques...'
 # Chapter1
-colloque1 = Colloque.create(title: "Introduction inaugurale", hour: "15:00", chapter: chapter1, category: "introduction")
+colloque1 = Colloque.create(title: "Introduction inaugurale du colloque", hour: "15:00", chapter: chapter1, category: "introduction")
 colloque2 =Colloque.create(title: "Flux monétaires à l'état gazeux", hour: "16:00", chapter: chapter1, category: "conférence")
 
 # Chapter2
@@ -71,7 +71,7 @@ colloque8 = Colloque.create(title: "Entreprises critiques", hour: "11:00", chapt
 # Chapter5
 colloque9 = Colloque.create(title: "Fausse monnaie et vérité artistique", hour: "14:00", chapter: chapter5, category: "conférence")
 
-# Chapter1
+# Chapter6
 colloque10 = Colloque.create(title: "Styles et fictions des économistes", hour: "15:00", chapter: chapter6, category: "table ronde")
 colloque11 = Colloque.create(title: "Imaginaires économiques", hour: "17:30", chapter: chapter6, category: "table ronde")
 puts 'Done !'
@@ -80,36 +80,17 @@ puts 'Creating interventions...'
 
 # Colloque1
 Intervention.create(
-	description: "Introduction générale", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque1,
-	intervenant: eh)
-
-Intervention.create(
 	description: "Mot d'accueil de Edith Heurgon", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
 	colloque: colloque1,
-	intervenant: eh)
-
-Intervention.create(
-	description: "Introduction", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque1,
-	intervenant: yt
+	intervenant: eh
 )
 
 Intervention.create(
 	description: "Introduction", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
 	colloque: colloque1,
-	intervenant: pb
-)
-
-Intervention.create(
-	description: "Introduction", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque1,
-	intervenant: mp
+	intervenant: Intervenant.create(name: "Yann Toma, Martial Poirson, Patrice Baubeau", university: "Direction du colloque")
 )
 
 # Colloque2
@@ -261,20 +242,21 @@ Intervention.create(
 	colloque: colloque10,
 	intervenant: ch
 )
+
+
+#Colloque11 
 Intervention.create(
 	description: "Traités d’économie rédigés par des artistes", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque10,
+	colloque: colloque11,
 	intervenant: sc
 )
 Intervention.create(
 	description: "Abondance et ambivalence de l’argent. Jean Bodin et sa Réponse aux paradoxes de Malestroit (1568)", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque10,
+	colloque: colloque11,
 	intervenant: an
 )
-
-#Colloque11 
 Intervention.create(
 	description: "Homo eroticus et homo œconomicus, le calcul libertin ou le bonheur comptable", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
