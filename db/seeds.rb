@@ -6,8 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Intervention.destroy_all
+Colloque.destroy_all
 Intervenant.destroy_all
 Chapter.destroy_all
+
+
 
 puts 'Creating intervenants...'
 eh = Intervenant.create(name: "Edith Heurgon")
