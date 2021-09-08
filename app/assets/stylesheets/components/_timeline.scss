@@ -163,6 +163,16 @@ a:hover .title::after {
   padding-bottom: 10px;
 }
 
+iframe {
+      width: 650px;
+      box-shadow: 105px 105px 150px 35px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 7s ease-in;
+}
+
+iframe:hover {
+      box-shadow: 445px 285px 250px 245px rgba(255, 0, 0, 0.7);
+}
+
 
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -203,13 +213,24 @@ a:hover .title::after {
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media screen and (max-width: 900px) {
-  .timeline ul li div.content {
-    width: 250px;
+@media screen and (max-width: 1024px) {
+  section {
+    width: 30vw;
+      position: absolute;
+      right: 0;
   }
-  .timeline ul li:nth-child(even) div.content {
-    left: -289px;
-    /*250+45-6*/
+  .timeline ul li div.content {
+    width: 350px;
+  }
+  h2 {
+    font-family: $headers-font;
+      font-size: 20px !important;
+      font-weight: 600 !important;
+      margin: 0;
+      max-width: 400px;
+  }
+  iframe {
+    width: 510px;
   }
 }
 
@@ -293,13 +314,3 @@ a:hover .title::after {
 
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-iframe {
-      width: 650px;
-      box-shadow: 105px 105px 150px 35px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 7s ease-in;
-}
-
-iframe:hover {
-      box-shadow: 445px 285px 250px 245px rgba(255, 0, 0, 0.7);
-}
