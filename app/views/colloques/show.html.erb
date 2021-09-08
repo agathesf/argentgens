@@ -8,7 +8,7 @@
   		<li>
   			<div class="content">
   				<time> &nbsp; </time>
-  				<% if @colloque.id == Colloque.first.id %>
+  				<% if @colloque.id > 1 %>
   					<p class="title"> <span> <%= link_to "< Retour :", colloque_path(@colloque.id-1) %> </span> <%= @previous.title %></p>
   				<% end %>
   				<h2 class="pt-2"> <%= @colloque.title %> </h2>
