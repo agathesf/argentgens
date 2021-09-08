@@ -11,8 +11,6 @@ Colloque.destroy_all
 Intervenant.destroy_all
 Chapter.destroy_all
 
-
-
 puts 'Creating intervenants...'
 eh = Intervenant.create(name: "Edith Heurgon")
 cb = Intervenant.create(name: "Christine Baron", university: "Université de Poitiers")
