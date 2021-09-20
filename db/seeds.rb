@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Intervention.destroy_all
-Colloque.destroy_all
-Intervenant.destroy_all
-Chapter.destroy_all
+Intervention.delete_all
+Colloque.delete_all
+Intervenant.delete_all
+Chapter.delete_all
 
 puts 'Creating intervenants...'
 eh = Intervenant.create(name: "Edith Heurgon", university: "Présidente du colloque de Cerisy")
@@ -100,6 +100,11 @@ Intervention.create(
 	colloque: colloque2,
 	intervenant: cb
 )
+Intervention.create(
+	description: "Question/Réponse", 
+	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	colloque: colloque2
+)
 
 # Colloque3 
 Intervention.create(
@@ -126,6 +131,11 @@ Intervention.create(
 	colloque: colloque3,
 	intervenant: ib
 )
+Intervention.create(
+	description: "Question/Réponse", 
+	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	colloque: colloque3
+)
 
 # Colloque4
 Intervention.create(
@@ -146,6 +156,11 @@ Intervention.create(
 	colloque: colloque4,
 	intervenant: ak
 )
+Intervention.create(
+	description: "Question/Réponse", 
+	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	colloque: colloque4
+)
 
 # Colloque5
 Intervention.create(
@@ -153,6 +168,11 @@ Intervention.create(
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
 	colloque: colloque5,
 	intervenant: eb
+)
+Intervention.create(
+	description: "Question/Réponse", 
+	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	colloque: colloque5
 )
 
 #Colloque6
@@ -180,6 +200,11 @@ Intervention.create(
 	colloque: colloque6,
 	intervenant: ld
 )
+Intervention.create(
+	description: "Question/Réponse", 
+	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	colloque: colloque6
+)
 
 #Colloque7
 Intervention.create(
@@ -199,6 +224,11 @@ Intervention.create(
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
 	colloque: colloque7,
 	intervenant: cd
+)
+Intervention.create(
+	description: "Question/Réponse", 
+	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	colloque: colloque7
 )
 
 #Colloque8
@@ -228,6 +258,11 @@ Intervention.create(
 	colloque: colloque9,
 	intervenant: em
 )
+Intervention.create(
+	description: "Question/Réponse", 
+	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	colloque: colloque9
+)
 
 #Colloque10
 Intervention.create(
@@ -242,15 +277,14 @@ Intervention.create(
 	colloque: colloque10,
 	intervenant: ch
 )
+Intervention.create(
+	description: "Question/Réponse", 
+	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	colloque: colloque10
+)
 
 
 #Colloque11 
-Intervention.create(
-	description: "Traités d’économie rédigés par des artistes", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque11,
-	intervenant: sc
-)
 Intervention.create(
 	description: "Abondance et ambivalence de l’argent. Jean Bodin et sa Réponse aux paradoxes de Malestroit (1568)", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
@@ -268,6 +302,11 @@ Intervention.create(
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
 	colloque: colloque11,
 	intervenant: sw
+)
+Intervention.create(
+	description: "Question/Réponse", 
+	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	colloque: colloque11
 )
 puts 'Done !'
 
