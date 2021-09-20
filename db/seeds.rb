@@ -280,7 +280,7 @@ Intervention.create(
 Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque10
+	colloque: colloque10,
 )
 
 
@@ -306,9 +306,11 @@ Intervention.create(
 Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque11
+	colloque: colloque11,
 )
-puts 'Done !'
+
+puts 'Done !' 
+puts Intervention.all.length
 
 
 

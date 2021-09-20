@@ -24,8 +24,9 @@
     	    <time class="time-show"><%= intervention.intervenant.name %></time> 
 
     	    <h4> <%= intervention.description %> </h4>
-    	    <p class="title py-3"> <span> <%= intervention.intervenant.name %> </span> · <%= intervention.intervenant.university %></p>
-
+          <% if intervention.intervenant != nil %>
+            <p class="title py-3"> <span> <%= intervention.intervenant.name %> </span> · <%= intervention.intervenant.university %></p>
+          <% end %>
     	    <div class="timeline-yt">
     	    	<iframe width="560" height="315" src="<%= intervention.video_url %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     	    </div>
