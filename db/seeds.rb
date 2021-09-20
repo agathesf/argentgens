@@ -40,6 +40,8 @@ sw = Intervenant.create(name: "Slaven Waelti", university: "Université de Bâle
 yt = Intervenant.create(name: "Yann Toma", university: "Université Paris 1 Panthéon-Sorbonne")
 mp = Intervenant.create(name: "Martial Poirson", university: "Université Paris 8")
 pb = Intervenant.create(name: "Patrice Baubeau", university: "Université Paris 10")
+faq = Intervenant.create(name: "FAQ", university: "Les participants s'interrogent")
+
 puts 'Done !'
 
 puts 'Creating chapters...'
@@ -103,7 +105,8 @@ Intervention.create(
 Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque2
+	colloque: colloque2,
+	intervenant: faq
 )
 
 # Colloque3 
@@ -134,7 +137,8 @@ Intervention.create(
 Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque3
+	colloque: colloque3,
+	intervenant: faq
 )
 
 # Colloque4
@@ -159,7 +163,8 @@ Intervention.create(
 Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque4
+	colloque: colloque4,
+	intervenant: faq
 )
 
 # Colloque5
@@ -172,7 +177,8 @@ Intervention.create(
 Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque5
+	colloque: colloque5,
+	intervenant: faq
 )
 
 #Colloque6
@@ -203,7 +209,8 @@ Intervention.create(
 Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque6
+	colloque: colloque6,
+	intervenant: faq
 )
 
 #Colloque7
@@ -228,7 +235,8 @@ Intervention.create(
 Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque7
+	colloque: colloque7,
+	intervenant: faq
 )
 
 #Colloque8
@@ -261,7 +269,8 @@ Intervention.create(
 Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
-	colloque: colloque9
+	colloque: colloque9,
+	intervenant: faq
 )
 
 #Colloque10
@@ -281,6 +290,7 @@ Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
 	colloque: colloque10,
+	intervenant: faq
 )
 
 
@@ -307,6 +317,7 @@ Intervention.create(
 	description: "Question/Réponse", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
 	colloque: colloque11,
+	intervenant: faq
 )
 
 puts 'Done !' 
