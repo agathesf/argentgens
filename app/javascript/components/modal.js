@@ -1,20 +1,62 @@
-const modalOpen = () => {
+const modalOpenPB = () => {
 var modal = document.getElementById('modalPB');
 var buttonModal = document.getElementById('modalPB-btn');
-var cross = document.getElementById('close');
+var crossPB = document.getElementById('closePB');
 
 console.log('hello');
 buttonModal.addEventListener("click", function() {
     console.log('hello');
-    var cross = document.getElementById('close');
+    var crossPB = document.getElementById('closePB');
 
     modal.classList.remove('hide');
     modal.classList.add('display');
-    cross.addEventListener("click", function() {
+    crossPB.addEventListener("click", function() {
         modal.classList.remove('display');
         modal.classList.add('hide');
     });
  });
 }
 
-export { modalOpen }
+export { modalOpenPB }
+
+const modalOpenMP = () => {
+var modal2 = document.getElementById('modalMP');
+var buttonModal2 = document.getElementById('modalMP-btn');
+var crossMP = document.getElementById('closeMP');
+
+console.log('hello');
+buttonModal2.addEventListener("click", function() {
+    console.log('hello');
+    var crossMP = document.getElementById('closeMP');
+
+    modal2.classList.remove('hide');
+    modal2.classList.add('display');
+    crossMP.addEventListener("click", function() {
+        modal2.classList.remove('display');
+        modal2.classList.add('hide');
+    });
+ });
+}
+
+export { modalOpenMP }
+
+const modalOpenYT = () => {
+var modal3 = document.getElementById('modalYT');
+var buttonModal3 = document.getElementById('modalYT-btn');
+var crossYT = document.getElementById('closeYT');
+
+console.log('hello');
+buttonModal3.addEventListener("click", function() {
+    console.log('hello');
+    var crossYT = document.getElementById('closeYT');
+
+    modal3.classList.remove('hide');
+    modal3.classList.add('display');
+    crossYT.addEventListener("click", function() {
+        modal3.classList.remove('display');
+        modal3.classList.add('hide');
+    });
+ });
+}
+
+export { modalOpenYT }

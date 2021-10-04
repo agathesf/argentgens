@@ -30,6 +30,10 @@ section {
   background: black;
 }
 
+.timeline li:last-child {
+      margin-bottom: 60px;
+}
+
 .timeline ul li::after {
   content: " \279C \2007 \2007 \2007 \2007 \2007 scroll";
   line-height: 17px;

@@ -29,20 +29,25 @@
 				<li class="dropbtn">équipe<div class="swiper-button-next"></div></li>
 				<div class="dropdown-content">
 					<span><strong>Colloque sous la direction de :</strong></span>
-					<span>Patrice Baubeau</span>
-					<span>Martial Poirson</span>
-					<span class="modal-link" id="modalPB-btn">Yann Toma</span>
+					<span class="modal-link" id="modalPB-btn">Patrice Baubeau</span>
+					<span class="modal-link" id="modalMP-btn">Martial Poirson</span>
+					<span class="modal-link" id="modalYT-btn">Yann Toma</span>
 				</div>
 			</div>
 
 			<div class="dropdown">
-				<li class="dropbtn">programme<div class="swiper-button-next"></div></li>
+				<li class="dropbtn">interventions<div class="swiper-button-next"></div></li>
 				<div class="dropdown-content dropdown-content-intervenant" style="line-height: 17px !important;">
 					<% @chapters.each do |chapter|%>
 						<strong> <%= chapter.title %> </strong>
 						<% chapter.colloques.each do |colloque| %>
 							<%= link_to colloque_path(colloque) do %>
-								<span> <%= colloque.title %> </span>
+								<span class="modal-link my-3"> <%= colloque.title %> </span>
+							<% end %>
+							<% colloque.interventions.each do |intervention| %>
+								<%= link_to intervenant_path(intervention.intervenant) do %>
+									<span class="modal-link my-3"> <%= intervention.description %> </span>
+								<% end %>
 							<% end %>
 						<% end %>
 					<% end %>
@@ -63,14 +68,14 @@
 			<div class="dropdown">
 				<li class="dropbtn">partenaires<div class="swiper-button-next"></div></li>
 				<div class="dropdown-content" style="margin: 0 !important">
-					<%= image_tag "patrenaires.gif", alt: "alttext", style: "width: 150px; margin: 0 auto;" %>
+					<%= image_tag "partenaires.gif", alt: "alttext", style: "width: 150px; margin: 0 auto;" %>
 					
 				</div>
 			</div>
 			<div class="dropdown">
 				<li class="dropbtn">contact<div class="swiper-button-next"></div></li>
 				<div class="dropdown-content">
-					<span>artgentgens@gmail.com</span>
+					<%= mail_to "artgentgens@gmail.com" %>
 				</div>
 			</div>
 		</div>

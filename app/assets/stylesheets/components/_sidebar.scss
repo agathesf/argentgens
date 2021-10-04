@@ -150,6 +150,10 @@
     bottom: -20px;   
 }
 
+.dropdown-content-intervenant a:last-child {
+  display: none;
+}
+
 .dropdown-content-intervenant::-webkit-scrollbar {
   display: none;
 }
@@ -246,7 +250,7 @@
   /*color:#eee;*/
 }
 
-#modalPB-btn {
+.modal-link {
   color: red;
   padding : 0;
   border : none;
@@ -256,7 +260,7 @@
   font-family: 'Open Sans';
 }
 
-#close {
+.close {
   color: red;
   padding : 0;
   border : none;
@@ -280,7 +284,7 @@
   border-bottom: 1px solid lightgray;
 }
 
-#modalPB-btn:hover::after {
+.modal-link:hover::after {
   content: "\279C";
   margin-left: 10px;
   display: inline;
@@ -289,7 +293,7 @@
 .modal{
   box-shadow: 0px 5px 45px 5px rgba(0, 0, 0, 0.15);
   background: whitesmoke;
-  height: 100vh;
+
   width: 400px;
 }
 
@@ -320,6 +324,9 @@
     border: 0px solid rgba(0, 0, 0, 0.2);
   padding: 30px;
     height: 100vh;
-    justify-content: end;
+    justify-content: start;
+    & img {
+      width: 340px;
+    }
 }
 

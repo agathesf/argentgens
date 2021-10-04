@@ -28,7 +28,9 @@ import "bootstrap";
 import { cursorRound } from '../components/cursor';
 import { dropdownMenu } from '../components/dropdown';
 import { timelineInit } from '../components/timeline';
-import { modalOpen } from '../components/modal';
+import { modalOpenPB } from '../components/modal';
+import { modalOpenMP } from '../components/modal';
+import { modalOpenYT } from '../components/modal';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -36,5 +38,7 @@ document.addEventListener('turbolinks:load', () => {
   cursorRound();
   dropdownMenu();
   timelineInit();
-  modalOpen();
+  modalOpenPB();
+  modalOpenMP();
+  modalOpenYT();
 });
