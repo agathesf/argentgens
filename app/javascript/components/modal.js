@@ -60,3 +60,24 @@ buttonModal3.addEventListener("click", function() {
 }
 
 export { modalOpenYT }
+
+const modalOpenPRO = () => {
+var modal4 = document.getElementById('modalPRO');
+var buttonModal4 = document.getElementById('modalPRO-btn');
+var crossPRO = document.getElementById('closePRO');
+
+console.log('hello');
+buttonModal4.addEventListener("click", function() {
+    console.log('hello');
+    var crossPRO = document.getElementById('closePRO');
+
+    modal4.classList.remove('hide');
+    modal4.classList.add('display');
+    crossPRO.addEventListener("click", function() {
+        modal4.classList.remove('display');
+        modal4.classList.add('hide');
+    });
+ });
+}
+
+export { modalOpenPRO }

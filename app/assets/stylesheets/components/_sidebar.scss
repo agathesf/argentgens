@@ -273,6 +273,7 @@
   top: 5px;
   right: 10px;
   cursor: none;
+  opacity: 1;
 }
 
 .scroll::-webkit-scrollbar {
@@ -283,6 +284,44 @@
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 }
+
+.modal-text-pro {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    max-height: 80vh;
+    overflow-y: scroll;
+  & li {
+    list-style: none;
+  }
+  &::after {
+    content: 'scroll';
+      position: absolute;
+      font-style: italic;
+      font-size: 10px;
+    bottom: 20px;  
+  }
+}
+
+.modal-text-pro::-webkit-scrollbar {
+  display: none;
+}
+
+li.chapter-list span {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+li.colloque-list span {
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+li.intervention-list {
+    padding-left: 10px;
+    font-weight: 200;
+    font-size: 12px;
+  }
 
 .modal-link:hover::after {
   content: "\279C";
@@ -295,6 +334,10 @@
   background: whitesmoke;
 
   width: 400px;
+}
+
+.modal-menu{
+  width: 100vw;
 }
 
 .display{

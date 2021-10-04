@@ -25,12 +25,16 @@ section {
   position: relative;
   width: 1px;
   margin: 0 auto;
-  padding-top: 0px;
+  padding-top: 20px;
   padding-bottom: 50px;
   background: black;
 }
 
-.timeline li:last-child {
+.timeline ul li:first-child {
+      margin-top: 100px;
+}
+
+.timeline ul li:last-child {
       margin-bottom: 60px;
 }
 
@@ -41,7 +45,7 @@ section {
   font-style: italic;
   position: absolute;
   left: 50%;
-  bottom: 250px;
+  bottom: 150px;
   transform: translateX(-50%);
   width: 20px;
   height: 20px;
@@ -204,10 +208,39 @@ iframe:hover {
 .timeline ul li.in-view::after {
   content: "";
   background: red;
-  top: 23px;
+  top: 43px;
   width: 18px;
   height: 18px;
 }
+
+.timeline ul li.in-view:first-child::before {
+  content: "";
+  background: black;
+  top: 0px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+
+.timeline ul li.in-view:last-child::before {
+  content: "";
+  background: black;
+  bottom: 0px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+
 
 .timeline ul li div.content {
   visibility: hidden;

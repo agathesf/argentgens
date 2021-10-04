@@ -51,3 +51,36 @@
 
 	</div>
 </div>
+
+<div class="modal hide" id="modalPRO">
+	<div class="modal-content">
+	  	<button class="button close" id="closePRO">&#215;</button>
+
+		<div class="modal-text-pro mt-4 py-3">
+			<div class="pt-3">
+				<ul>
+					<% @chapters.each do |chapter|%>
+						<li class="chapter-list py-3">
+							<span> <%= chapter.title %> · <%= chapter.date %> </span>
+							<% chapter.colloques.each do |colloque| %>
+								<li class="colloque-list py-2">
+									<%= link_to colloque_path(colloque) do %>
+										<span class="modal-link my-3"> <%= colloque.title %> </span>
+									<% end %>
+									<% colloque.interventions.each do |intervention| %>
+										<li class="intervention-list py-1">
+										<%= link_to intervenant_path(intervention.intervenant) do %>
+											<span class="modal-link my-3"> <%= intervention.description %> </span>
+										<% end %>
+										</li>
+									<% end %>
+								</li>
+							<% end %>
+						</li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>
