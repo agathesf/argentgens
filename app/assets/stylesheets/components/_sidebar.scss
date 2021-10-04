@@ -132,7 +132,7 @@
 // }
 
 .dropdown-content-intervenant {
-      max-height: 12vh;
+      max-height: 13vh;
     overflow: scroll;
     margin: 0px 0px 30px;
 }
@@ -336,8 +336,15 @@ li.intervention-list {
   width: 400px;
 }
 
-.modal-menu{
+.modal-menu {
   width: 100vw;
+
+  &:hover .colloque-link {
+  }
+}
+
+.modal-menu:hover .cursor-dot-shadow {
+  box-shadow: 445px 285px 250px 245px rgba(255, 0, 0, 0.7);
 }
 
 .display{
