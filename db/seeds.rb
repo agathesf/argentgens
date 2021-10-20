@@ -139,7 +139,7 @@ puts 'Creating interventions...'
 # Colloque1
 Intervention.create(
 	description: "Mot d'accueil de Edith Heurgon", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/_e4tLEATKMk",
 	colloque: colloque1,
 	intervenant: eh
 )
@@ -154,7 +154,7 @@ Intervention.create(
 # Colloque2
 Intervention.create(
 	description: "Flux monétaires à l'état gazeux", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/UDMF_GAA724",
 	colloque: colloque2,
 	intervenant: cb
 )
@@ -168,25 +168,25 @@ Intervention.create(
 # Colloque3 
 Intervention.create(
 	description: "Dom Juan ou le crédit d’une œuvre", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/nLN3ompgjR8",
 	colloque: colloque3,
 	intervenant: gc
 )
 Intervention.create(
 	description: "L’économie politique transformée en fiction : La mise en scène des secteurs économiques dans le théâtre sentimental espagnol et français", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/rQgO6rfkx8o",
 	colloque: colloque3,
 	intervenant: bs
 )
 Intervention.create(
 	description: "Le théâtre est-il un luxe ? Des valeurs dans le domaine du spectacle vivant", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/tr84yqy3ZIA",
 	colloque: colloque3,
 	intervenant: rj
 )
 Intervention.create(
 	description: "Postures anticapitalistes sur la scène contemporaine", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/InPcenNy2M4",
 	colloque: colloque3,
 	intervenant: ib
 )
@@ -200,13 +200,13 @@ Intervention.create(
 # Colloque4
 Intervention.create(
 	description: "Dévalorisations : expériences artistiques de détournement de la valeur", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/paM9B0Gvj7I",
 	colloque: colloque4,
 	intervenant: ml
 )
 Intervention.create(
 	description: "Money money money, ou le fric c’est chic", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/sXUw2rIvyFQ",
 	colloque: colloque4,
 	intervenant: id
 )
@@ -226,7 +226,7 @@ Intervention.create(
 # Colloque5
 Intervention.create(
 	description: "Pour une poétique de l’insolvabilité", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/kxNc7g8dnwg",
 	colloque: colloque5,
 	intervenant: eb
 )
@@ -240,25 +240,25 @@ Intervention.create(
 #Colloque6
 Intervention.create(
 	description: "Économie du risque et mises en scène de la loterie au début du dix-neuvième siècle", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/XVm6PET37eM",
 	colloque: colloque6,
 	intervenant: mw
 )
 Intervention.create(
 	description: "I shall eat ice & drink French wine and be above vulgar economy", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/oJjPE9PEUug",
 	colloque: colloque6,
 	intervenant: mm
 )
 Intervention.create(
 	description: "L’âge de l’artketing : les noces de l’art, du marketing et de l’économie", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/IIEWimTydWs",
 	colloque: colloque6,
 	intervenant: cr
 )
 Intervention.create(
 	description: "L’argent dans le neuvième art : les échanges monétaires vus par l’école franco-belge", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/L1sruzTD3c4",
 	colloque: colloque6,
 	intervenant: ld
 )
@@ -272,19 +272,19 @@ Intervention.create(
 #Colloque7
 Intervention.create(
 	description: "Philosophie de l’argent : Sur les Théories esthétiques de Georg Simmel", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/s4u3mFU8IoU",
 	colloque: colloque7,
 	intervenant: jl
 )
 Intervention.create(
 	description: "Traités d’économie rédigés par des artistes", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/2PJLEViw4Yw",
 	colloque: colloque7,
 	intervenant: sc
 )
 Intervention.create(
 	description: "Gilles Mahé – Art & Gens", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube.com/embed/TjyhbMelki4",
 	colloque: colloque7,
 	intervenant: cd
 )
