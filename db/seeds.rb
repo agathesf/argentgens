@@ -298,7 +298,7 @@ Intervention.create(
 #Colloque8
 Intervention.create(
 	description: "De Marcel Duchamp aux entreprises critiques : Chèque en bois, sociétés fictives et libération de capital artistique", 
-	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/EXn5D6rYUhA",
 	colloque: colloque8,
 	intervenant: yt
 )
@@ -318,7 +318,7 @@ Intervention.create(
 #Colloque9 
 Intervention.create(
 	description: "Fausse monnaie et vérité artistique", 
-	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/jpkd06v0ZIc",
 	colloque: colloque9,
 	intervenant: em
 )
@@ -332,13 +332,13 @@ Intervention.create(
 #Colloque10
 Intervention.create(
 	description: "Et l’économie devint épique", 
-	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/rsSj2GOatHQ",
 	colloque: colloque10,
 	intervenant: ap
 )
 Intervention.create(
 	description: "Les métaphores chez Jean-Baptiste Say", 
-	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/H1xE-L4xh_E",
 	colloque: colloque10,
 	intervenant: ch
 )
@@ -353,19 +353,19 @@ Intervention.create(
 #Colloque11 
 Intervention.create(
 	description: "Abondance et ambivalence de l’argent. Jean Bodin et sa Réponse aux paradoxes de Malestroit (1568)", 
-	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/4HkIsaY1Trc",
 	colloque: colloque11,
 	intervenant: an
 )
 Intervention.create(
 	description: "Homo eroticus et homo œconomicus, le calcul libertin ou le bonheur comptable", 
-	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/tinSZSpW80E",
 	colloque: colloque11,
 	intervenant: es
 )
 Intervention.create(
 	description: "Fertilité de l’argent et castration : approche d’un imaginaire dans la littérature du XVIIIe siècle", 
-	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/AZ7izS_BjhA",
 	colloque: colloque11,
 	intervenant: sw
 )
