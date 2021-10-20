@@ -38,7 +38,7 @@
                         
                         <div class="programme-more">
                             <% colloque.interventions.each do |intervention| %>
-                                <p class="intervenants pl-0"> <%= intervention.intervenant.name %> <span class=" text-dark"> (<%= intervention.intervenant.university %>) · <em> <%= intervention.description %> </em> </span> </p>
+                                <p class="intervenants pl-0"> <%= intervention.intervenant.name %> <span class="intervenants-more text-dark"> (<%= intervention.intervenant.university %>) · <em> <%= intervention.description %> </em> </span> </p>
                             <% end %>
                         </div>
 

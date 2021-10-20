@@ -156,15 +156,26 @@ a:hover .title::after {
   display: flex;
 }
 
-.programme-more {
-  display: none;
-}
 
 a:hover div.programme-int {
   display: none;
 }
 
-a:hover div.programme-more {
+.programme-more {
+  opacity: 0.5;
+  transition: all 0.3s ease-in;
+}
+
+a:hover .programme-more {
+  opacity: 1;
+}
+
+
+a .programme-more .intervenants {
+  display: none;
+}
+
+a:hover .programme-more .intervenants{
   display: block;
 }
 
