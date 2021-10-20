@@ -146,7 +146,7 @@ Intervention.create(
 
 Intervention.create(
 	description: "Introduction", 
-	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/Q4kkqxMqUKQ",
 	colloque: colloque1,
 	intervenant: Intervenant.create(name: "Yann Toma, Martial Poirson, Patrice Baubeau", university: "Direction du colloque")
 )
