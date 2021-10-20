@@ -66,7 +66,7 @@ cd = Intervenant.create(name: "Christophe Domino",
 ri = Intervenant.create(name: "Res Ingold", 
 						university: "Artiste & Fondateur d’Ingold Airlines, Cologne",
 						about: "Res Ingold est un artiste contemporain suisse. Il est président de la compagnie aérienne Ingold Airlines, une entreprise-artiste qui joue un rôle fondamental dans l’action et la diffusion d’un art en capacité d’influer sur le réel par le biais de l’organisation et de la fiction. Il est professeur à l'Académie des beaux-arts de Munich.")
-sw = Intervenant.create(name: "Stephen Wright", 
+st = Intervenant.create(name: "Stephen Wright", 
 						university: "Critique & Commissaire d’exposition",
 						about: "Stephen Wright est critique d'art contemporain, enseignant en esthétique, traducteur, commissaire d'exposition et permaculteur. Il écrit et produit des expositions sur les pratiques artistiques ou « para-artistiques », soulevant l'hypothèse d’un « art sans œuvre, sans auteur et sans spectateur », une hypothèse non étayée à ce jour puisque toutes les expositions dont il est question ont été présentées à des publics concrets.")
 em = Intervenant.create(name: "Éric Méchoulan", 
@@ -312,7 +312,7 @@ Intervention.create(
 	description: "Vers un art sans reste, sans excédent et sans plus-value", 
 	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
 	colloque: colloque8,
-	intervenant: sw
+	intervenant: st
 )
 
 #Colloque9 
