@@ -304,13 +304,13 @@ Intervention.create(
 )
 Intervention.create(
 	description: "La valeur idéelle du vol", 
-	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/nmSR9dPGJvM",
 	colloque: colloque8,
 	intervenant: ri
 )
 Intervention.create(
 	description: "Vers un art sans reste, sans excédent et sans plus-value", 
-	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/SVwOxMjlPv0",
 	colloque: colloque8,
 	intervenant: st
 )
