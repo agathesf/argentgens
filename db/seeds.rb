@@ -139,14 +139,14 @@ puts 'Creating interventions...'
 # Colloque1
 Intervention.create(
 	description: "Mot d'accueil de Edith Heurgon", 
-	video_url: "https://www.youtube.com/embed/_e4tLEATKMk",
+	video_url: "https://www.youtube-nocookie.com/embed/_e4tLEATKMk", 
 	colloque: colloque1,
 	intervenant: eh
 )
 
 Intervention.create(
 	description: "Introduction", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque1,
 	intervenant: Intervenant.create(name: "Yann Toma, Martial Poirson, Patrice Baubeau", university: "Direction du colloque")
 )
@@ -154,13 +154,13 @@ Intervention.create(
 # Colloque2
 Intervention.create(
 	description: "Flux monétaires à l'état gazeux", 
-	video_url: "https://www.youtube.com/embed/UDMF_GAA724",
+	video_url: "https://www.youtube-nocookie.com/embed/UDMF_GAA724",
 	colloque: colloque2,
 	intervenant: cb
 )
 Intervention.create(
 	description: "Question/Réponse", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque2,
 	intervenant: faq
 )
@@ -168,31 +168,31 @@ Intervention.create(
 # Colloque3 
 Intervention.create(
 	description: "Dom Juan ou le crédit d’une œuvre", 
-	video_url: "https://www.youtube.com/embed/nLN3ompgjR8",
+	video_url: "https://www.youtube-nocookie.com/embed/nLN3ompgjR8",
 	colloque: colloque3,
 	intervenant: gc
 )
 Intervention.create(
 	description: "L’économie politique transformée en fiction : La mise en scène des secteurs économiques dans le théâtre sentimental espagnol et français", 
-	video_url: "https://www.youtube.com/embed/rQgO6rfkx8o",
+	video_url: "https://www.youtube-nocookie.com/embed/rQgO6rfkx8o",
 	colloque: colloque3,
 	intervenant: bs
 )
 Intervention.create(
 	description: "Le théâtre est-il un luxe ? Des valeurs dans le domaine du spectacle vivant", 
-	video_url: "https://www.youtube.com/embed/tr84yqy3ZIA",
+	video_url: "https://www.youtube-nocookie.com/embed/tr84yqy3ZIA",
 	colloque: colloque3,
 	intervenant: rj
 )
 Intervention.create(
 	description: "Postures anticapitalistes sur la scène contemporaine", 
-	video_url: "https://www.youtube.com/embed/InPcenNy2M4",
+	video_url: "https://www.youtube-nocookie.com/embed/InPcenNy2M4",
 	colloque: colloque3,
 	intervenant: ib
 )
 Intervention.create(
 	description: "Question/Réponse", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque3,
 	intervenant: faq
 )
@@ -200,25 +200,25 @@ Intervention.create(
 # Colloque4
 Intervention.create(
 	description: "Dévalorisations : expériences artistiques de détournement de la valeur", 
-	video_url: "https://www.youtube.com/embed/paM9B0Gvj7I",
+	video_url: "https://www.youtube-nocookie.com/embed/paM9B0Gvj7I",
 	colloque: colloque4,
 	intervenant: ml
 )
 Intervention.create(
 	description: "Money money money, ou le fric c’est chic", 
-	video_url: "https://www.youtube.com/embed/sXUw2rIvyFQ",
+	video_url: "https://www.youtube-nocookie.com/embed/sXUw2rIvyFQ",
 	colloque: colloque4,
 	intervenant: id
 )
 Intervention.create(
 	description: "Ça n’existe pas, une société qui ne batte pas monnaie. Communauté et fictions économiques dans la trilogie Vernon Subutex de Virginie Despentes", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/sjKlR5KM87o",
 	colloque: colloque4,
 	intervenant: ak
 )
 Intervention.create(
 	description: "Question/Réponse", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque4,
 	intervenant: faq
 )
@@ -226,13 +226,13 @@ Intervention.create(
 # Colloque5
 Intervention.create(
 	description: "Pour une poétique de l’insolvabilité", 
-	video_url: "https://www.youtube.com/embed/kxNc7g8dnwg",
+	video_url: "https://www.youtube-nocookie.com/embed/kxNc7g8dnwg",
 	colloque: colloque5,
 	intervenant: eb
 )
 Intervention.create(
 	description: "Question/Réponse", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque5,
 	intervenant: faq
 )
@@ -240,31 +240,31 @@ Intervention.create(
 #Colloque6
 Intervention.create(
 	description: "Économie du risque et mises en scène de la loterie au début du dix-neuvième siècle", 
-	video_url: "https://www.youtube.com/embed/XVm6PET37eM",
+	video_url: "https://www.youtube-nocookie.com/embed/XVm6PET37eM",
 	colloque: colloque6,
 	intervenant: mw
 )
 Intervention.create(
 	description: "I shall eat ice & drink French wine and be above vulgar economy", 
-	video_url: "https://www.youtube.com/embed/oJjPE9PEUug",
+	video_url: "https://www.youtube-nocookie.com/embed/oJjPE9PEUug",
 	colloque: colloque6,
 	intervenant: mm
 )
 Intervention.create(
 	description: "L’âge de l’artketing : les noces de l’art, du marketing et de l’économie", 
-	video_url: "https://www.youtube.com/embed/IIEWimTydWs",
+	video_url: "https://www.youtube-nocookie.com/embed/IIEWimTydWs",
 	colloque: colloque6,
 	intervenant: cr
 )
 Intervention.create(
 	description: "L’argent dans le neuvième art : les échanges monétaires vus par l’école franco-belge", 
-	video_url: "https://www.youtube.com/embed/L1sruzTD3c4",
+	video_url: "https://www.youtube-nocookie.com/embed/L1sruzTD3c4",
 	colloque: colloque6,
 	intervenant: ld
 )
 Intervention.create(
 	description: "Question/Réponse", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque6,
 	intervenant: faq
 )
@@ -272,25 +272,25 @@ Intervention.create(
 #Colloque7
 Intervention.create(
 	description: "Philosophie de l’argent : Sur les Théories esthétiques de Georg Simmel", 
-	video_url: "https://www.youtube.com/embed/s4u3mFU8IoU",
+	video_url: "https://www.youtube-nocookie.com/embed/s4u3mFU8IoU",
 	colloque: colloque7,
 	intervenant: jl
 )
 Intervention.create(
 	description: "Traités d’économie rédigés par des artistes", 
-	video_url: "https://www.youtube.com/embed/2PJLEViw4Yw",
+	video_url: "https://www.youtube-nocookie.com/embed/2PJLEViw4Yw",
 	colloque: colloque7,
 	intervenant: sc
 )
 Intervention.create(
 	description: "Gilles Mahé – Art & Gens", 
-	video_url: "https://www.youtube.com/embed/TjyhbMelki4",
+	video_url: "https://www.youtube-nocookie.com/embed/TjyhbMelki4",
 	colloque: colloque7,
 	intervenant: cd
 )
 Intervention.create(
 	description: "Question/Réponse", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque7,
 	intervenant: faq
 )
@@ -298,19 +298,19 @@ Intervention.create(
 #Colloque8
 Intervention.create(
 	description: "De Marcel Duchamp aux entreprises critiques : Chèque en bois, sociétés fictives et libération de capital artistique", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque8,
 	intervenant: yt
 )
 Intervention.create(
 	description: "La valeur idéelle du vol", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque8,
 	intervenant: ri
 )
 Intervention.create(
 	description: "Vers un art sans reste, sans excédent et sans plus-value", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque8,
 	intervenant: st
 )
@@ -318,13 +318,13 @@ Intervention.create(
 #Colloque9 
 Intervention.create(
 	description: "Fausse monnaie et vérité artistique", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque9,
 	intervenant: em
 )
 Intervention.create(
 	description: "Question/Réponse", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque9,
 	intervenant: faq
 )
@@ -332,19 +332,19 @@ Intervention.create(
 #Colloque10
 Intervention.create(
 	description: "Et l’économie devint épique", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque10,
 	intervenant: ap
 )
 Intervention.create(
 	description: "Les métaphores chez Jean-Baptiste Say", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque10,
 	intervenant: ch
 )
 Intervention.create(
 	description: "Question/Réponse", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque10,
 	intervenant: faq
 )
@@ -353,25 +353,25 @@ Intervention.create(
 #Colloque11 
 Intervention.create(
 	description: "Abondance et ambivalence de l’argent. Jean Bodin et sa Réponse aux paradoxes de Malestroit (1568)", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque11,
 	intervenant: an
 )
 Intervention.create(
 	description: "Homo eroticus et homo œconomicus, le calcul libertin ou le bonheur comptable", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque11,
 	intervenant: es
 )
 Intervention.create(
 	description: "Fertilité de l’argent et castration : approche d’un imaginaire dans la littérature du XVIIIe siècle", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque11,
 	intervenant: sw
 )
 Intervention.create(
 	description: "Question/Réponse", 
-	video_url: "https://www.youtube.com/embed/261OCjeg9GI",
+	video_url: "https://www.youtube-nocookie.com/embed/261OCjeg9GI",
 	colloque: colloque11,
 	intervenant: faq
 )
