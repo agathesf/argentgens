@@ -12,11 +12,11 @@ const timelineInit = () => {
     var rect = el.getBoundingClientRect();
     
     return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
+      // rect.top >= 0 &&
+      // rect.left >= 0 //&&
       rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        (window.innerHeight + 150 || document.documentElement.clientHeight + 150) //&&
+      //rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 
   }
@@ -26,6 +26,7 @@ const timelineInit = () => {
     for (var i = 0; i < items.length; i++) {
       if (isElementInViewport(items[i])) {
         items[i].classList.add("in-view");
+        console.log(i)
       }
     }
 

@@ -37,6 +37,6 @@ p {
 	margin-bottom: 0;
 }
 
-a {
-	cursor: none;
+p, div, a, html, body, i, button {
+	cursor: none !important;
 }
