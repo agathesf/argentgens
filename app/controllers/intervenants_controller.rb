@@ -7,7 +7,7 @@ class IntervenantsController < ApplicationController
 		@colloques = Colloque.all
 		@chapters = Chapter.all
 
-		@intervenants = Intervenant.all
+		@intervenants = Intervenant.all.sort_by { |intervenant| intervenant.name }
 		@intervenant = Intervenant.find(params[:id])
 	end
 

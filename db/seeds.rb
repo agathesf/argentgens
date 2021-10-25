@@ -69,9 +69,9 @@ ri = Intervenant.create(name: "Res Ingold",
 st = Intervenant.create(name: "Stephen Wright", 
 						university: "Critique & Commissaire d’exposition",
 						about: "Stephen Wright est critique d'art contemporain, enseignant en esthétique, traducteur, commissaire d'exposition et permaculteur. Il écrit et produit des expositions sur les pratiques artistiques ou « para-artistiques », soulevant l'hypothèse d’un « art sans œuvre, sans auteur et sans spectateur », une hypothèse non étayée à ce jour puisque toutes les expositions dont il est question ont été présentées à des publics concrets.")
-em = Intervenant.create(name: "Éric Méchoulan", 
+em = Intervenant.create(name: "Eric Méchoulan", 
 						university: "Université de Montréal",
-						about: "Éric Méchoulan est professeur au département des littératures de langue française à Université de Montréal, il a été directeur de programme au Collège international de philosophie et professeur invité dans de nombreuses institutions. Ses recherches actuelles portent sur les sentiments politiques à l’âge classique, sur l’histoire intermédiale des idées, sur les archives et la mémoire, ainsi que sur le temps qui passe. Il travaille aussi, dans un aller-retour entre philosophie et histoire, à mieux comprendre l’institution de l’esthétique et, en particulier, ce que nous nommons «littérature».")
+						about: "Eric Méchoulan est professeur au département des littératures de langue française à Université de Montréal, il a été directeur de programme au Collège international de philosophie et professeur invité dans de nombreuses institutions. Ses recherches actuelles portent sur les sentiments politiques à l’âge classique, sur l’histoire intermédiale des idées, sur les archives et la mémoire, ainsi que sur le temps qui passe. Il travaille aussi, dans un aller-retour entre philosophie et histoire, à mieux comprendre l’institution de l’esthétique et, en particulier, ce que nous nommons «littérature».")
 ap = Intervenant.create(name: "Alexandre Péraud", 
 						university: "Université de Bordeaux 3",
 						about: "Alexandre Péraud est maître de conférences en littérature française et diplômé de l'Institut d'Etudes Politiques de Bordeaux. Spécialiste du romantisme et du roman réaliste, il réfléchit aux relations qu'entretiennent la littérature et les sciences, notamment l'économie, au XIXe et XXe siècles.")
@@ -81,9 +81,9 @@ ch = Intervenant.create(name: "Christophe Reffait",
 an = Intervenant.create(name: "Annika Nickenig", 
 						university: "Humboldt-Universität zu Berlin",
 						about: "Annika Nickenig est professeure de littérature française à Humboldt-Universität, Berlin. Em 2010, elle a écrit une thèse sur “La figure de la femme malade et sa subversion dans les textes en prose des écrivaines de la fin du XXe siècle”.")
-es = Intervenant.create(name: "Élise Sultan-Villet", 
+es = Intervenant.create(name: "Elise Sultan-Villet", 
 						university: "Université Paris 1 Panthéon-Sorbonne",
-						about: "Élise Sultan-Villet est enseignante en philosophie, docteur de l'Université Paris 1 Panthéon-Sorbonne. Elle est chercheure associée au laboratoire HIPHIMO, centre d’histoire des philosophies modernes de la Sorbonne (EA 1451). Elle  travaille sur la philosophie des romans libertins du XVIIIe siècle. Elle est l’auteur d’un ouvrage inspiré de sa thèse : Les romans libertins : la philosophie des sens dessus dessous. Elle co-anime, depuis 2014, le séminaire interdisciplinaire « Fictions et économies ».")
+						about: "Elise Sultan-Villet est enseignante en philosophie, docteur de l'Université Paris 1 Panthéon-Sorbonne. Elle est chercheure associée au laboratoire HIPHIMO, centre d’histoire des philosophies modernes de la Sorbonne (EA 1451). Elle  travaille sur la philosophie des romans libertins du XVIIIe siècle. Elle est l’auteur d’un ouvrage inspiré de sa thèse : Les romans libertins : la philosophie des sens dessus dessous. Elle co-anime, depuis 2014, le séminaire interdisciplinaire « Fictions et économies ».")
 sw = Intervenant.create(name: "Slaven Waelti", 
 						university: "Université de Bâle",
 						about: "Slaven Waelti est spécialiste de la philosophie et la littérature française à l’Université de Bâle, à l’Ecole normale supérieure et à la Humboldt Universität de Berlin. Il est l’auteur d’une thèse sur Pierre Klossowski et travaille à un projet d’habilitation sur l’économie au temps des Lumières.")
@@ -149,6 +149,27 @@ Intervention.create(
 	video_url: "https://www.youtube-nocookie.com/embed/Q4kkqxMqUKQ",
 	colloque: colloque1,
 	intervenant: Intervenant.create(name: "Yann Toma, Martial Poirson, Patrice Baubeau", university: "Direction du colloque")
+)
+
+Intervention.create(
+	description: "Introduction", 
+	video_url: "https://www.youtube-nocookie.com/embed/Q4kkqxMqUKQ",
+	colloque: colloque1,
+	intervenant: pb
+)
+
+Intervention.create(
+	description: "Introduction", 
+	video_url: "https://www.youtube-nocookie.com/embed/Q4kkqxMqUKQ",
+	colloque: colloque1,
+	intervenant: mp
+)
+
+Intervention.create(
+	description: "Introduction", 
+	video_url: "https://www.youtube-nocookie.com/embed/Q4kkqxMqUKQ",
+	colloque: colloque1,
+	intervenant: yt
 )
 
 # Colloque2

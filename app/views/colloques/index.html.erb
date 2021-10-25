@@ -25,24 +25,37 @@
 
             <div class="colloque-link">
                 <% chapter.colloques.each do |colloque| %>
+
                     <%= link_to colloque_path(colloque) do %>
                         <p class="title"> <%= colloque.hour %> · <span> <%= colloque.title %></span> </p>
                     
                         <div class="programme-int">
                             <% intervenants = [] %>
                             <% colloque.interventions.each do |intervention| %>
-                                <% intervenants << intervention.intervenant.name %>
+                                <% if  intervention.intervenant.name == "Yann Toma, Martial Poirson, Patrice Baubeau"%>
+                                    <% intervenants << intervention.intervenant.name %>
+                                <% elsif intervention.description == "Introduction" %>
+                                <!-- coucou --> 
+                                <% else %>
+                                    <% intervenants << intervention.intervenant.name %>
+                                <% end %>
                             <% end %>
                             <p class="intervenants"> <%= intervenants.join(" · ") %> </p>
                         </div>
                         
                         <div class="programme-more">
                             <% colloque.interventions.each do |intervention| %>
-                                <p class="intervenants pl-0"> <%= intervention.intervenant.name %> <span class="intervenants-more text-dark"> (<%= intervention.intervenant.university %>) · <em> <%= intervention.description %> </em> </span> </p>
+                                <% if  intervention.intervenant.name == "Yann Toma, Martial Poirson, Patrice Baubeau"%>
+                                    <p class="intervenants pl-0"> <%= intervention.intervenant.name %> <span class="intervenants-more text-dark"> (<%= intervention.intervenant.university %>) · <em> <%= intervention.description %> </em> </span> </p>
+                                <% elsif intervention.description == "Introduction" %>
+                                <!-- coucou --> 
+                                <% else %>
+                                    <p class="intervenants pl-0"> <%= intervention.intervenant.name %> <span class="intervenants-more text-dark"> (<%= intervention.intervenant.university %>) · <em> <%= intervention.description %> </em> </span> </p>
+                                <% end %>
                             <% end %>
                         </div>
-
                     <% end %>
+
                 <% end %>
             </div>
 

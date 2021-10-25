@@ -4,14 +4,14 @@ class ColloquesController < ApplicationController
 		@colloques = Colloque.all
 
 		@chapters = Chapter.all
-	  	@intervenants = Intervenant.all
+	  	@intervenants = Intervenant.all.sort_by { |intervenant| intervenant.name }
 	end
 
 	def show
 		@colloque = Colloque.find(params[:id])
 
 		@chapters = Chapter.all
-		@intervenants = Intervenant.all
+		@intervenants = Intervenant.all.sort_by { |intervenant| intervenant.name }
 
 		if @colloque.id > 1
 			@previous = Colloque.find(params[:id] = @colloque.id-1)
