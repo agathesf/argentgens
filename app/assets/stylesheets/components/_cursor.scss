@@ -25,3 +25,9 @@
     height: 20px;
     background-color: red;
 }
+
+@media screen and (max-width: 600px) {
+  .cursor-dot, .cursor-dot-outline {
+    display: none;
+  }
+}

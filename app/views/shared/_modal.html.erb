@@ -68,11 +68,21 @@
 										<span class="modal-link my-3"> <%= colloque.title %> </span>
 									<% end %>
 									<% colloque.interventions.each do |intervention| %>
-										<li class="intervention-list py-1">
-										<%= link_to intervenant_path(intervention.intervenant) do %>
-											<span class="modal-link my-3"> <%= intervention.description %> </span>
+										<% if  intervention.intervenant.name == "Yann Toma, Martial Poirson, Patrice Baubeau"%>
+										    <li class="intervention-list py-1">
+											    <%= link_to intervenant_path(intervention.intervenant) do %>
+											    	<span class="modal-link my-3"> <%= intervention.description %> </span>
+											    <% end %>
+										    </li>
+										<% elsif intervention.description == "Introduction" %>
+										<!-- coucou --> 
+										<% else %>
+										    <li class="intervention-list py-1">
+											    <%= link_to intervenant_path(intervention.intervenant) do %>
+											    	<span class="modal-link my-3"> <%= intervention.description %> </span>
+											    <% end %>
+										    </li>
 										<% end %>
-										</li>
 									<% end %>
 								</li>
 							<% end %>

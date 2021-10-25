@@ -313,19 +313,32 @@ iframe:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .timeline ul li {
-    margin-left: 20px;
+  section {
+    width: 10vw;
+      position: absolute;
+      right: 0;
   }
-  .timeline ul li div.content {
-    width: calc(100vw - 91px);
+  .timeline ul li:nth-child(odd) div.content {
+    left: -350px;
   }
   .timeline ul li:nth-child(even) div.content {
-    left: 45px;
+    left: -350px;
   }
-  .timeline ul li:nth-child(even) div.content::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+  .timeline ul li div.content {
+    width: 350px;
+  }
+  h2 {
+    font-family: $headers-font;
+      font-size: 20px !important;
+      font-weight: 600 !important;
+      margin: 0;
+      max-width: 400px;
+  }
+  iframe {
+    width: 84vw !important;
+  }
+  .timeline ul li:first-child {
+      margin-top: 20px;
   }
 }
 
